@@ -53,25 +53,45 @@ Mengambil data dari Library System:
 FINE-SYSTEMS/
 ├── fine-service/
 │   ├── src/
+
 │   ├── schemas/
+
 │   ├── Dockerfile
+
 │
+
 ├── fine-rule-service/
+
 │   ├── src/
+
 │   ├── schemas/
+
 │   ├── Dockerfile
+
 │
+
 ├── fine-payment-service/
+
 │   ├── src/
+
 │   ├── schemas/
+
 │   ├── Dockerfile
+
 │
+
 ├── report-service/
+
 │   ├── src/
+
 │   ├── schemas/
+
 │   ├── Dockerfile
+
 │
+
 ├── docker-compose.yml
+
 └── README.md
 
 
