@@ -82,6 +82,7 @@ cd FINE-SYSTEMS
 2. Jalankan Docker
 docker-compose up --build
 3. Akses GraphQL Playground
+
 | Service              | URL                                                            |
 | -------------------- | -------------------------------------------------------------- |
 | Fine Service         | [http://localhost:5001/graphql](http://localhost:5001/graphql) |
@@ -103,20 +104,24 @@ Pengujian dilakukan dengan:
 - Request antar service melalui Docker Network
 - Simulasi integrasi lintas kelompok
 # 🛠️ Troubleshooting
+
 ❌ Container tidak bisa connect ke database
 Solusi:
 Pastikan service dan database berada di network Docker yang sama
 Gunakan service name, bukan localhost
 DB_HOST=fine-db
+
 ❌ Error ECONNREFUSED antar service
 Solusi:
 Pastikan semua container berjalan:
 docker ps
 Pastikan dependency service sudah depends_on di docker-compose.yml
+
 ❌ GraphQL Schema tidak terbaca
 Solusi:
 Pastikan file .graphql dimuat di Apollo Server
 Restart container setelah perubahan schema
+
 ❌ Token JWT tidak valid
 Solusi:
 Pastikan public key JWT benar
