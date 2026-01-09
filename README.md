@@ -20,12 +20,14 @@ Fine System terintegrasi lintas kelompok dengan Library System menggunakan Graph
 - API-First Design
 - Containerized Deployment
 # Microservices yang Dikembangkan
+
 | Service              | Port | Deskripsi                           |
 | -------------------- | ---- | ----------------------------------- |
 | Fine Service         | 5001 | Perhitungan denda & integrasi utama |
 | Fine Rule Service    | 5002 | Manajemen aturan denda              |
 | Fine Payment Service | 5003 | Proses pembayaran denda             |
 | Report Service       | 5004 | Laporan & analitik                  |
+
 Setiap service memiliki database MySQL 8.0 terpisah.
 # 🔗 Integrasi Lintas Kelompok (Wajib)
 
@@ -47,7 +49,7 @@ Fine System sebagai Consumer
 Mengambil data dari Library System:
 - Member Service → data anggota
 - Return Service → data pengembalian
-# 📁 Struktur Repository
+## 📁 Struktur Repository
 FINE-SYSTEMS/
 ├── fine-service/
 │   ├── src/
